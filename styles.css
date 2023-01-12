@@ -103,4 +103,38 @@ body {
     background-color: antiquewhite;
     display: grid;
     grid-template-rows: 1fr 1fr;
+    padding: 10px 50px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
 }
+
+.search {
+    display: flex;
+    align-items: center;
+    font-size: 26px;
+    gap: 30px;
+    padding-left: 25px;
+    font-family: 'Sofia Sans';
+
+}
+
+.search > input {
+    width: 600px;
+    height: 35px;
+    border-radius: 20px;
+    background-color: #cdd1df;
+    border: none;
+}
+
+#profile {
+    width: 60px;
+    height: 60px;
+    
+    border-radius: 50px;
+    background-image: url(pexels-pixabay-36717.jpg);
+    background-size: cover;
+}
+
+.search > *:nth-child(2) {
+    margin-right: 400px;
+}
+
