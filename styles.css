@@ -26,7 +26,12 @@ body {
 .head-main {
     grid-column: 2 / 3;
     background-color: aliceblue;
+    display: grid;
+    grid-template-rows: 1fr 4fr;
 }
+
+
+/* Side Bar */
 
 .nav {
     display: grid;
@@ -90,4 +95,12 @@ body {
     align-self: start;
     margin: 0;
     padding-top: 10px;
+}
+
+/* Header of Page */
+
+.header {
+    background-color: antiquewhite;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
 }
