@@ -209,9 +209,35 @@ button {
     grid-template-rows: 1fr;
 }
 
+.project-box {
+    grid-column: 1 / 2;
+    background-color: ;
+    display: grid;
+    padding: 0 50px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px;
+}
 
+.proj {
+    background-color: white;
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    
+}
 
+#pic-1 {
+    background-image: url("background-g8c6c7cac1_640.png");
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
 
+.announce {
+    grid-column: 2 / 3;
+    background-color: #cf5d5d;
+}
 
 
 
