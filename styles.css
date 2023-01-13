@@ -2,7 +2,7 @@
 
 
 html, body {
-    height: 100%;
+    max-height: 100vh;
     margin: 0;
 }
 
@@ -19,11 +19,13 @@ body {
 }
 
 .sidebar {
+    height: 100vh;
     grid-column: 1 / 2;
     background-color: #a78bfa;
 }
 
 .head-main {
+    height: 100vh;
     grid-column: 2 / 3;
     background-color: aliceblue;
     display: grid;
@@ -36,7 +38,7 @@ body {
 .nav {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 100px 342px auto;
+    grid-template-rows: 100px 342px minmax(200px, 1fr);
     height: 100%;
     color: white;
     font-family: 'Sofia Sans';
@@ -173,7 +175,6 @@ button {
     border-radius: 20px;
     font-size: 14px;
 
-    
 }
 
 #hi-there {
@@ -184,3 +185,42 @@ button {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
+
+/* Main Projects Board */
+
+.title-proj {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Sofia Sans', 'Helvetica';
+    font-size: 1.5rem;
+    padding:  20px 60px;
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 80px 1fr;
+}
+.content {
+    display: grid;
+    grid-row: 2/ 3;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+
+
+
+
+
+
+
+
+/* pseudo classes misc */
+
+button:hover {
+    cursor: pointer;
+    background-color: #9c77f3;
+}
+
