@@ -238,6 +238,11 @@ button {
 .announce {
     grid-column: 2 / 3;
     background-color: #cf5d5d;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 4fr;
+    gap: 40px;
+    padding: 20px 30px 20px 0;
 }
 
 h2 {
@@ -251,6 +256,7 @@ h2 {
     padding-left: 10px;
     padding-right: 40px;
     margin-bottom: 0;
+    color:#29282bf5
 }
 
 .proj-icon {
@@ -261,7 +267,13 @@ h2 {
     justify-content: end;
 }
 
-
+#announce-title,
+#ann-content {
+    background-color: white;
+    border-radius: 8px;
+    
+    
+}
 /* pseudo classes misc */
 
 button:hover {
