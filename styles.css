@@ -66,7 +66,15 @@ body {
     grid-template-columns: 1fr 2fr;
     justify-items: center;
     align-items: center;
+    
 }
+
+
+#comm {
+    padding-bottom: 45px;
+    border-bottom: 1px solid white;
+}
+
 
 .nav-buttons > p,
 .settings > p {
@@ -85,6 +93,7 @@ body {
     grid-template-rows: 2fr 1fr 4fr;
     justify-items: center;
     align-items: center;
+   
 }
 
 #bot {
@@ -194,7 +203,11 @@ button {
     justify-content: space-between;
     font-family: 'Sofia Sans', 'Helvetica';
     font-size: 1.5rem;
-    padding:  20px 60px;
+    padding:  20px 60px 10px 60px;
+}
+
+.title-proj p:nth-child(2) {
+    padding-right: 70px;
 }
 
 .main-content {
@@ -225,7 +238,7 @@ button {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: max-content max-content max-content 1fr;
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
     
 }
 
@@ -237,10 +250,9 @@ button {
 
 .announce {
     grid-column: 2 / 3;
-    background-color: #cf5d5d;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 4fr;
+    grid-template-rows: 3fr 1fr;
     gap: 40px;
     padding: 20px 30px 20px 0;
 }
@@ -271,8 +283,63 @@ h2 {
 #ann-content {
     background-color: white;
     border-radius: 8px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+#announce-title {
+    font-family: 'Sofia Sans';
+    padding:  0 20px;
+    color:rgb(84, 85, 88);
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+#announce-title p {
+    font-size: 16px;
     
+}
+
+#announce-title div {
+    border-bottom: 1px solid rgb(84, 85, 88);
+}
+
+#announce-title div:nth-child(3) {
+    border-bottom: none;
+}
+
+
+#ann-content {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    padding-left: 20px;
     
+}
+
+
+#alt-profile-1,
+#alt-profile-2 {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-size: cover;
+}
+
+#alt-profile-1 {
+    background-image: url(blue-whale-ga1d00f06b_640.png);
+    border: 1px solid gray;
+}
+
+#alt-profile-2 {
+    background-image: url(lion-g68bcfb1c3_640.png);
+}
+
+.alt-name {
+    display: flex;
+    gap: 15px;
+    font-weight: bold;
+    color: #222122;
+    font-family: "Sofia Sans";
 }
 /* pseudo classes misc */
 
