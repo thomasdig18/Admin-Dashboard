@@ -27,7 +27,7 @@ body {
 .head-main {
     height: 100vh;
     grid-column: 2 / 3;
-    background-color: aliceblue;
+    background-color: rgb(235, 235, 235);
     display: grid;
     grid-template-rows: 1fr 4fr;
 }
@@ -213,7 +213,7 @@ button {
     grid-column: 1 / 2;
     background-color: ;
     display: grid;
-    padding: 0 50px;
+    padding: 20px 50px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 20px;
@@ -224,12 +224,12 @@ button {
     border-radius: 8px;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: max-content max-content max-content 1fr;
     
 }
 
 #pic-1 {
-    background-image: url("background-g8c6c7cac1_640.png");
+    background-image: url('sunset-gdafc22286_640.jpg');
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
 }
@@ -239,8 +239,26 @@ button {
     background-color: #cf5d5d;
 }
 
+h2 {
+    margin-bottom: 0;
+    padding-left: 10px;
+    font-family: 'Sofia Sans';
+    color:#1f1f20ec
+}
 
+.proj > p {
+    padding-left: 10px;
+    padding-right: 40px;
+    margin-bottom: 0;
+}
 
+.proj-icon {
+    padding-top: 45px;
+    padding-right: 10px;
+    gap: 10px;
+    display: flex;
+    justify-content: end;
+}
 
 
 /* pseudo classes misc */
